@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?w=1060");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Card */
+.container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.3rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+}
+
+/* Password Box */
+.password-box {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.password-box input {
+  flex: 1;
+  margin-top: 0;
+}
+
+.password-box button {
+  width: 48px;
+  margin-left: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+/* Error Messages */
+.error {
+  color: #ffb3b3;
+  font-size: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+/* Links */
+a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+}

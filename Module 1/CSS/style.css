@@ -1,0 +1,71 @@
+    /* :root{
+      --accent:#0d6efd;
+      --muted:#6c757d;
+      --bg:#f8f9fa;
+    }
+    *{box-sizing:border-box} */
+    body{
+      font-family: 'Poppins', sans-serif;
+      margin:0;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Navigation bar */
+    .navbar-brand { font-weight:700; letter-spacing:0.4px; }
+
+    /* Hero */
+    .hero {
+      height:70vh;
+      display:flex;
+      align-items:center;
+      color:#fff;
+      background-size:cover;
+      background-position:center;
+      position:relative;
+    }
+    
+    .hero .container { position:relative; z-index:2; }
+    .hero .subtitle { opacity:0.95; }
+
+    /* sections spacing */
+    section { padding:60px 0; }
+    .section-title { margin-bottom:1.5rem; }
+
+    /* Projects */
+    .projects-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap:1.25rem;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+      gap:1rem;
+      align-items:start;
+    }
+    .skill {
+      background:#fff;
+      padding:14px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    /* Blog */
+    .blog-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap:1rem;
+    }
+
+    /* Footer */
+    footer { background:#0b1220; color:#fff; padding:24px 0; }
+
+    /* Responsive tweaks */
+    @media (max-width:900px) {
+      .about-grid { grid-template-columns:1fr; }
+    }
