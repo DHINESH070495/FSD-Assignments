@@ -26,7 +26,7 @@ function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "https://fsd-assignments.onrender.com/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         formData
       );
 

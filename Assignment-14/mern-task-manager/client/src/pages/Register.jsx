@@ -23,7 +23,7 @@ function Register() {
 
     try {
       await axios.post(
-        "https://fsd-assignments.onrender.com/api/auth/register",
+        "http://localhost:5000/api/auth/register",
         formData
       );
 
