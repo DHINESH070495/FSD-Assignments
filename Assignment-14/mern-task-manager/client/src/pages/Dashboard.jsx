@@ -32,7 +32,7 @@ function Dashboard() {
   const fetchCustomers = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/customers",
+        "https://fsd-assignments.onrender.com/api/customers",
         {
           headers: {
             Authorization: token,
@@ -62,7 +62,7 @@ function Dashboard() {
       if (editingId) {
         // UPDATE
         await axios.put(
-          `http://localhost:5000/api/customers/${editingId}`,
+          `https://fsd-assignments.onrender.com/api/customers/${editingId}`,
           formData,
           {
             headers: {
@@ -75,7 +75,7 @@ function Dashboard() {
       } else {
         // ADD
         await axios.post(
-          "http://localhost:5000/api/customers",
+          "https://fsd-assignments.onrender.com/api/customers",
           formData,
           {
             headers: {
@@ -103,7 +103,7 @@ function Dashboard() {
   const deleteCustomer = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/customers/${id}`,
+        `https://fsd-assignments.onrender.com/api/customers/${id}`,
         {
           headers: {
             Authorization: token,
